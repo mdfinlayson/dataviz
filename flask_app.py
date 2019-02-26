@@ -10,6 +10,14 @@ app.config["DEBUG"] = True
 def index():
     return render_template("main_page.html")
 
+
+@app.route('/dashboard/')
+def dashboard():
+    return
+    #return render_template("main_page.html")
+
+
+
 if __name__ == "__main__":
     app.run()
 
